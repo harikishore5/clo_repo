@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Student Save Data</title>
+	<!-- Link to Bootstrap CSS file -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+	a{
+	font-size:20px;
+	color:black;
+	
+	}
+		body {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-image: url('https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-size: cover;
+	background-color: rgba(255,255,255,0.8); /* added transparency */
+	padding: 30px; /* added more padding to make it easier to see the transparency */
+}
+		h1
+		{
+		color:white;
+		}
+		.container {
+  position: relative;
+  top: -100px;
+}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<center><h1 class="card-title">STUDENT SAVEDATA</h1></center>
+				<div class="card">
+					<div class="card-body">
+					<a href="javascript:history.back()">Back</a>
+						<form action="studentsave" method="post">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" class="form-control" id="name" name="name">
+							</div>
+							<div class="form-group">
+								<label for="sub">Subject:</label>
+								<input type="text" class="form-control" id="sub" name="sub">
+							</div>
+							<div class="form-group">
+								<label for="sec">Section:</label>
+								<input type="text" class="form-control" id="sec" name="sec">
+							</div>
+							<div class="form-group">
+								<label for="pcontact">Parent Contact:</label>
+								<input type="text" class="form-control" id="pcontact" name="pcontact">
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="text" class="form-control" id="email" name="email">
+							</div>
+							<div class="form-group">
+								<label for="op">Overall Percentage:</label>
+								<input type="text" class="form-control" id="op" name="op">
+							</div>
+							<div class="form-group">
+								<label for="gender">Gender:</label>
+								<input type="text" class="form-control" id="gender" name="gender">
+							</div>
+							<button type="submit" class="btn btn-primary">Save</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Link to Bootstrap JS file -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

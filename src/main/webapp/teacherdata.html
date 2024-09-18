@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+body {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-image: url('https://img.freepik.com/free-vector/gradient-geometric-background_23-2149337509.jpg?w=360');
+	background-size: cover;
+	background-color: rgba(255,255,255,0.8); 
+}
+
+/* Make button transparent */
+.btn-primary {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/* Hover effect */
+.btn-primary:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: transparent;
+}
+</style>
+</head>
+<body>
+  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <form action="teacherdata" method="post">
+    <a href="javascript:history.back()">Back</a>
+      <button class="btn btn-primary btn-lg">Teacher Data Get</button>
+    </form>
+  </div>
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<!-- Add Bootstrap CDN link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+body {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-image: url('https://images.pexels.com/photos/3772620/pexels-photo-3772620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	background-size: cover;
+	background-color: rgba(255,255,255,0.8); /* added transparency */
+	padding: 30px; /* added more padding to make it easier to see the transparency */
+}
+.container {
+  position: relative;
+  top: 10px;
+}
+.card {
+	
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	background-color: rgba(255,255,255,0.3);
+	
+}
+
+</style>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+				<h1 class="card-title">Teacher Information</h1>
+				<!-- Use Bootstrap's form class and grid system to align input tags properly -->
+				<form action="teachersave" method="post">
+				<a href="javascript:history.back()">Back</a>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">Name:</label>
+						<div class="col-sm-10">
+							<input type="text" name="name" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">Subject:</label>
+						<div class="col-sm-10">
+							<input type="text" name="sub" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">Class Teacher:</label>
+						<div class="col-sm-10">
+							<input type="text" name="ct" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">Phone:</label>
+						<div class="col-sm-10">
+							<input type="tel" name="ph" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">Email:</label>
+						<div class="col-sm-10">
+							<input type="email" name="email" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label">Salary:</label>
+						<div class="col-sm-10">
+							<input type="number" name="sal" class="form-control">
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Add Bootstrap's JavaScript CDN link -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
